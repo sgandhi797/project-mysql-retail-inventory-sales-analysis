@@ -38,3 +38,133 @@ project-mysql-retail-inventory-sales-analysis/
 ├── visuals/ 
 │ └── trend_screenshots.png 
 └── README.md
+
+---
+
+## 💡 Business Questions Answered
+
+1. 📊 **Which products and categories drive the most sales?**
+2. 🌎 **Which states and regions generate the highest revenue?**
+3. 🔁 **Which products have the highest return rates?**
+4. 📆 **How do sales trend month-over-month?**
+5. 💸 **Are there high-revenue products with poor profit margins?**
+
+---
+
+## 🔍 Key SQL Queries
+
+- `Converting date format of orders.OrderDate from dd/mm/yyyy to yyyy/mm/dd`
+  ```sql
+  UPDATE orders 
+  SET 
+      OrderDate = STR_TO_DATE(OrderDate, '%m/%d/%Y')
+  ;
+
+- `Converting date format of orders.ShipDate from dd/mm/yyyy to yyyy/mm/dd`
+  ```sql
+  UPDATE orders 
+  SET 
+      ShipDate = STR_TO_DATE(ShipDate, '%m/%d/%Y')
+  ;
+
+- `1a. top_10_products_by_sales.sql`
+  ```sql
+  SELECT 
+      ProductName, 
+      ROUND(SUM(Sales), 2) AS TotalSales
+  FROM
+      orders
+  GROUP BY ProductName
+  ORDER BY TotalSales DESC
+  LIMIT 10
+  ;
+
+- `1b. top_categories_by_sales.sql`
+  ```sql
+  SELECT 
+      Category, 
+      ROUND(SUM(Sales), 2) AS TotalSales
+  FROM
+      orders
+  GROUP BY Category
+  ORDER BY TotalSales DESC
+  LIMIT 10
+  ;
+
+- `2a. sales_by_region.sql`
+  ```sql
+  SELECT 
+      Region, 
+      ROUND(SUM(Sales), 2) AS TotalSales
+  FROM
+      orders
+  GROUP BY Region
+  ORDER BY TotalSales DESC
+  ;
+
+- `2b. top_10_states_by_sales.sql`
+  ```sql
+  SELECT 
+      State, 
+      ROUND(SUM(Sales), 2) AS TotalSales
+  FROM
+      orders
+  GROUP BY State
+  ORDER BY TotalSales DESC
+  LIMIT 10
+  ;
+
+- `3. return_rate_by_product.sql`
+  ```sql
+  SELECT 
+      o.ProductName,
+      COUNT(r.OrderID) AS Returns,
+      COUNT(o.OrderID) AS TotalOrders,
+      ROUND(COUNT(r.OrderID) / COUNT(o.OrderID) * 100,
+              2) AS ReturnRatePercentage
+  FROM
+      orders o
+          LEFT JOIN
+      returns r ON o.OrderID = r.OrderID
+  GROUP BY o.ProductName
+  ORDER BY ReturnRatePercentage DESC
+  LIMIT 10
+  ;
+
+- `4. monthly_sales_trend.sql`
+  ```sql
+  SELECT 
+      DATE_FORMAT(OrderDate, '%Y/%m') AS YearMonth,
+      ROUND(SUM(Sales), 2) AS MonthlySales
+  FROM
+      orders
+  GROUP BY YearMonth
+  ORDER BY YearMonth DESC
+  ;
+
+- `5. sales_vs._profit_margin_by_product.sql`
+  ```sql
+  SELECT 
+      ProductName,
+      ROUND(SUM(Sales), 2) AS TotalSales,
+      ROUND(SUM(Profit), 2) AS TotalProfit,
+      ROUND(SUM(Profit) / NULLIF(SUM(Sales), 0) * 100,
+              2) AS ProfitMarginPercentage
+  FROM
+      orders
+  GROUP BY ProductName
+  HAVING TotalSales > 1000
+  ORDER BY ProfitMarginPercentage DESC
+  LIMIT 10
+  ;
+
+  ---
+
+##  📌 Key Insights
+- California and New York are the most profitable states, with the highest sales volume.
+
+- Office Supplies generate more consistent sales year-round compared to Furniture.
+
+- Certain products, like tables, have disproportionately high return rates and low margins.
+
+- December consistently spikes in sales, suggesting seasonal marketing opportunities.
