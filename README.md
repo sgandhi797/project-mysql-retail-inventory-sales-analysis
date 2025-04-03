@@ -33,13 +33,13 @@ project-mysql-retail-inventory-sales-analysis/
 ├── key_sql_queries/
 │   ├── date_format_conversion.sql                   # Change orders.OrderDate column from dd/mm/yyyy to yyyy/mm/dd format
 │   ├── date_format_conversion.sql                   # Change orders.ShipDate column from dd/mm/yyyy to yyyy/mm/dd format
-│   ├── top_10_products_by_sales.sql                 # Top 10 products by total sales amount
-│   ├── top_categories_by_sales.sql                  # Categories listed by total sales amount
-│   ├── sales_by_region.sql                          # Region listed by total sales amount
-│   ├── top_10_states_by_sales.sql                   # Top 10 states by total sales amount
+│   ├── top_10_products_by_sales.sql                 # Top 10 products by total sales
+│   ├── top_categories_by_sales.sql                  # Categories by total sales
+│   ├── sales_by_region.sql                          # Region  by total sales
+│   ├── top_10_states_by_sales.sql                   # Top 10 states by total sales
 │   ├── return_rate_by_product.sql                   # Top 10 products by return rates
-│   ├── monthly_sales_trend.sql                      # Date (yyyy/mm) by total monthly sales 
-│   ├── sales_vs._profit_margin_by_product.sql       # Products by profit margin percentage
+│   ├── monthly_sales_trend.sql                      # Date (yyyy/mm) by total monthly sales
+│   ├── sales_vs._profit_margin_by_product.sql       # Products by profit margin
 ├── reports/
 │   └── business_insights.md                         # Summary of business insights and analysis
 ├── visuals/
