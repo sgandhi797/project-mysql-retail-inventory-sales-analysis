@@ -158,7 +158,7 @@
   LIMIT 10
   ;
 
-  ---
+---
 
 ## 📊 Visualizations
 
@@ -180,8 +180,7 @@
 ## 🚀 How to Use
 
 1. Clone this repo:
-   `git clone https://github.com/yourusername/retail-inventory-sales-analysis.git
-    cd retail-inventory-sales-analysis`
+   `git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git` - cd project-mysql-retail-inventory-sales-analysis
 3. Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
 4. Run scripts from /sql_queries in MySQL Workbench, DBeaver, or command line.
 
@@ -193,12 +192,6 @@
 - Excel/Sheets: Quick data previews and summaries
 - GitHub: Version control and hosting
 - Power BI or Tableau (optional): Dashboards and presentation-ready visuals
-
----
-
-## 👨‍💻 Author
-
-- Sunny Gandhi
 
 ---
 
