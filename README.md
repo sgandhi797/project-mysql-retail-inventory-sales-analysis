@@ -67,7 +67,7 @@
       ShipDate = STR_TO_DATE(ShipDate, '%m/%d/%Y')
   ;
 
-- `1a. top_10_products_by_sales.sql`
+- `top_10_products_by_sales.sql`
   ```sql
   SELECT 
       ProductName, 
@@ -79,7 +79,7 @@
   LIMIT 10
   ;
 
-- `1b. top_categories_by_sales.sql`
+- `top_categories_by_sales.sql`
   ```sql
   SELECT 
       Category, 
@@ -91,7 +91,7 @@
   LIMIT 10
   ;
 
-- `2a. sales_by_region.sql`
+- `sales_by_region.sql`
   ```sql
   SELECT 
       Region, 
@@ -102,7 +102,7 @@
   ORDER BY TotalSales DESC
   ;
 
-- `2b. top_10_states_by_sales.sql`
+- `top_10_states_by_sales.sql`
   ```sql
   SELECT 
       State, 
@@ -114,7 +114,7 @@
   LIMIT 10
   ;
 
-- `3. return_rate_by_product.sql`
+- `return_rate_by_product.sql`
   ```sql
   SELECT 
       o.ProductName,
@@ -131,7 +131,7 @@
   LIMIT 10
   ;
 
-- `4. monthly_sales_trend.sql`
+- `monthly_sales_trend.sql`
   ```sql
   SELECT 
       DATE_FORMAT(OrderDate, '%Y/%m') AS YearMonth,
@@ -142,7 +142,7 @@
   ORDER BY YearMonth DESC
   ;
 
-- `5. sales_vs._profit_margin_by_product.sql`
+- `sales_vs._profit_margin_by_product.sql`
   ```sql
   SELECT 
       ProductName,
@@ -167,22 +167,21 @@
 ---
 
 ## 📌 Key Insights
+
 - California and New York are the most profitable states, with the highest sales volume.
-
 - Office Supplies generate more consistent sales year-round compared to Furniture.
-
 - Certain products, like tables, have disproportionately high return rates and low margins.
-
 - December consistently spikes in sales, suggesting seasonal marketing opportunities.
 
 ---
 
 ## 🚀 How to Use
 
-1. Clone this repo:
-   `git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git` - cd project-mysql-retail-inventory-sales-analysis
-3. Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
-4. Run scripts from /sql_queries in MySQL Workbench, DBeaver, or command line.
+- Clone this repo:
+  - `git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git`
+  - cd project-mysql-retail-inventory-sales-analysis
+- Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
+- Run scripts from /sql_queries in MySQL Workbench, DBeaver, or command line.
 
 ---
 
@@ -196,4 +195,5 @@
 ---
 
 ## 📄 License
+
 - This project is licensed under the MIT License.
