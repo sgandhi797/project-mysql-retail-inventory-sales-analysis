@@ -6,7 +6,7 @@
 
 ## 📈 Project Overview
 
-This project explores and analyzes retail sales and inventory data using **MySQL**. The goal is to extract valuable insights into product performance, regional revenue, monthly sales trends, and return rates. The analysis simulates how a business analyst or data analyst would interact with company data to inform strategic decisions.
+- This project explores and analyzes retail sales and inventory data using **MySQL**. The goal is to extract valuable insights into product performance, regional revenue, monthly sales trends, and return rates. The analysis simulates how a business analyst or data analyst would interact with company data to inform strategic decisions.
 
 ---
 
@@ -18,13 +18,13 @@ This project explores and analyzes retail sales and inventory data using **MySQL
   - `returns` – records of returned orders
   - `people` – sales representatives
 
-The dataset includes orders from 2014–2017 and contains fields such as `OrderDate`, `Sales`, `Category`, `Profit`, `Region`, and `Product`.
+- The dataset includes orders from 2014–2017 and contains fields such as `OrderDate`, `Sales`, `Category`, `Profit`, `Region`, and `Product`.
 
 ---
 
 ## 🧱 Project Structure
 
-project-mysql-retail-inventory-sales-analysis/ 
+- project-mysql-retail-inventory-sales-analysis/ 
 ├── data/ 
 │ └── Orders.csv 
 ├── sql_queries/ 
@@ -160,7 +160,13 @@ project-mysql-retail-inventory-sales-analysis/
 
   ---
 
-##  📌 Key Insights
+## 📊 Visualizations
+
+- TBA
+
+---
+
+## 📌 Key Insights
 - California and New York are the most profitable states, with the highest sales volume.
 
 - Office Supplies generate more consistent sales year-round compared to Furniture.
@@ -168,3 +174,33 @@ project-mysql-retail-inventory-sales-analysis/
 - Certain products, like tables, have disproportionately high return rates and low margins.
 
 - December consistently spikes in sales, suggesting seasonal marketing opportunities.
+
+---
+
+## 🚀 How to Use
+
+1. Clone this repo:
+   `git clone https://github.com/yourusername/retail-inventory-sales-analysis.git
+    cd retail-inventory-sales-analysis`
+3. Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
+4. Run scripts from /sql_queries in MySQL Workbench, DBeaver, or command line.
+
+---
+
+## 📚 Tools & Technologies
+
+- MySQL: Data cleaning, querying, joins, aggregations
+- Excel/Sheets: Quick data previews and summaries
+- GitHub: Version control and hosting
+- Power BI or Tableau (optional): Dashboards and presentation-ready visuals
+
+---
+
+## 👨‍💻 Author
+
+- Sunny Gandhi
+
+---
+
+## 📄 License
+- This project is licensed under the MIT License.
