@@ -23,3 +23,18 @@ The dataset includes orders from 2014–2017 and contains fields such as `OrderD
 ---
 
 ## 🧱 Project Structure
+
+project-mysql-retail-inventory-sales-analysis/ 
+├── data/ 
+│ └── Orders.csv 
+├── sql_queries/ 
+│ ├── monthly_sales.sql 
+│ ├── top_products.sql 
+│ ├── state_sales.sql 
+│ ├── return_rate_by_product.sql 
+│ ├── low_margin_products.sql 
+├── reports/ 
+│ └── business_insights.md 
+├── visuals/ 
+│ └── trend_screenshots.png 
+└── README.md
