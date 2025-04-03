@@ -17,31 +17,35 @@
   - `orders` – transactional sales data
   - `returns` – records of returned orders
   - `people` – sales representatives
-
 - The dataset includes orders from 2014–2017 and contains fields such as `OrderDate`, `Sales`, `Category`, `Profit`, `Region`, and `Product`.
 
 ---
 
 ## 🧱 Project Structure
 
+```
 project-mysql-retail-inventory-sales-analysis/
-├── data/
-│   └── Orders.csv
-│   └── Returns.csv
-│   └── People.csv
-├── sql_queries/
-│   ├── top_10_products_by_sales.sql
-│   ├── top_categories_by_sales.sql
-│   ├── sales_by_region.sql
-│   ├── top_10_states_by_sales.sql
-│   ├── return_rate_by_product.sql
-│   ├── monthly_sales_trend.sql
-│   ├── sales_vs._profit_margin_by_product.sql
+├── dataset/
+│   └── Sample Dataset - Superstore Sales.xlsx       # Raw dataset (Superstore Sales)
+│   └── Orders.csv                                   # Raw dataset (Superstore Sales)
+│   └── Returns.csv                                  # Raw dataset (Superstore Sales)                              
+│   └── People.csv                                   # Raw dataset (Superstore Sales)
+├── key_sql_queries/
+│   ├── date_format_conversion.sql                   # Change orders.OrderDate column from dd/mm/yyyy to yyyy/mm/dd format
+│   ├── date_format_conversion.sql                   # Change orders.ShipDate column from dd/mm/yyyy to yyyy/mm/dd format
+│   ├── top_10_products_by_sales.sql                 # Top 10 products by total sales amount
+│   ├── top_categories_by_sales.sql                  # Categories listed by total sales amount
+│   ├── sales_by_region.sql                          # Region listed by total sales amount
+│   ├── top_10_states_by_sales.sql                   # Top 10 states by total sales amount
+│   ├── return_rate_by_product.sql                   # Top 10 products by return rates
+│   ├── monthly_sales_trend.sql                      # Date (yyyy/mm) by total monthly sales 
+│   ├── sales_vs._profit_margin_by_product.sql       # Products by profit margin percentage
 ├── reports/
-│   └── business_insights.md
+│   └── business_insights.md                         # Summary of business insights and analysis
 ├── visuals/
-│   └── TBA
-└── README.md
+│   └── TBA                                          # Visualizations (charts, trends, dashboards)
+└── README.md                                        # Project overview, instructions, and insights
+```
 
 ---
 
@@ -57,14 +61,14 @@ project-mysql-retail-inventory-sales-analysis/
 
 ## 🔍 Key SQL Queries
 
-- `Converting date format of orders.OrderDate from dd/mm/yyyy to yyyy/mm/dd`
+- `date_format_conversion.sql` 
   ```sql
   UPDATE orders 
   SET 
       OrderDate = STR_TO_DATE(OrderDate, '%m/%d/%Y')
   ;
 
-- `Converting date format of orders.ShipDate from dd/mm/yyyy to yyyy/mm/dd`
+- `date_format_conversion.sql`
   ```sql
   UPDATE orders 
   SET 
