@@ -24,19 +24,23 @@
 
 ## 🧱 Project Structure
 
-- project-mysql-retail-inventory-sales-analysis/ 
-├── data/ 
-│ └── Orders.csv 
-├── sql_queries/ 
-│ ├── monthly_sales.sql 
-│ ├── top_products.sql 
-│ ├── state_sales.sql 
-│ ├── return_rate_by_product.sql 
-│ ├── low_margin_products.sql 
-├── reports/ 
-│ └── business_insights.md 
-├── visuals/ 
-│ └── trend_screenshots.png 
+project-mysql-retail-inventory-sales-analysis/
+├── data/
+│   └── Orders.csv
+│   └── Returns.csv
+│   └── People.csv
+├── sql_queries/
+│   ├── top_10_products_by_sales.sql
+│   ├── top_categories_by_sales.sql
+│   ├── sales_by_region.sql
+│   ├── top_10_states_by_sales.sql
+│   ├── return_rate_by_product.sql
+│   ├── monthly_sales_trend.sql
+│   ├── sales_vs._profit_margin_by_product.sql
+├── reports/
+│   └── business_insights.md
+├── visuals/
+│   └── TBA
 └── README.md
 
 ---
