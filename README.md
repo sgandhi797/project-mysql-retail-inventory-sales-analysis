@@ -44,10 +44,10 @@
 ## 💡 Business Questions Answered
 
 1. 📊 **Which products and categories drive the most sales?**
-2. 🌎 **Which states and regions generate the highest revenue?**
+2. 🌎 **Which states and regions generate the most revenue?**
 3. 🔁 **Which products have the highest return rates?**
-4. 📆 **How do sales trend month-over-month?**
-5. 💸 **Are there high-revenue products with poor profit margins?**
+4. 📆 **How do sales vary month-over-month?**
+5. 💸 **Are there products with high revenue and low profit margins?**
 
 ---
 
