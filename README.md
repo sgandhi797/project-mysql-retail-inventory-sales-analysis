@@ -23,7 +23,7 @@
 
 ## 🧱 Project Structure
 
-```
+```text
 project-mysql-retail-inventory-sales-analysis/
 ├── dataset/
 │   └── Sample Dataset - Superstore Sales.xlsx       # Raw dataset (Superstore Sales)
