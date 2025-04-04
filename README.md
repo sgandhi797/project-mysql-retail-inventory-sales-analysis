@@ -195,10 +195,10 @@ project-mysql-retail-inventory-sales-analysis/
 
 ## 📚 Tools & Technologies
 
-- MySQL: Data cleaning, querying, joins, aggregations
-- Excel/Sheets: Quick data previews and summaries
-- GitHub: Version control and hosting
-- Power BI or Tableau (optional): Dashboards and presentation-ready visuals
+- **MySQL**: Data cleaning, querying, joins, aggregations
+- **Excel/Sheets**: Quick data previews and summaries
+- **GitHub**: Version control and hosting
+- **Power BI or Tableau (optional)**: Dashboards and presentation-ready visuals
 
 ---
 
