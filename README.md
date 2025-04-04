@@ -21,7 +21,7 @@
 
 ---
 
-## 🧱 Project Structure
+## 📂 Project Structure
 
 ```text
 project-mysql-retail-inventory-sales-analysis/
