@@ -22,38 +22,6 @@
 
 ---
 
-## 📂 Project Structure
-
-```text
-project-mysql-retail-inventory-sales-analysis/
-├── dataset/
-│   ├── Orders.csv                             # Raw transactional sales data
-│   ├── Returns.csv                            # Records of returned orders
-│   └── People.csv                             # Sales representative details
-│
-├── key_sql_queries/
-│   ├── date_format_conversion.sql             # Convert OrderDate and ShipDate to DATE format
-│   ├── top_10_products_by_sales.sql           # Highest-grossing products
-│   ├── top_categories_by_sales.sql            # Sales totals by product category
-│   ├── sales_by_region.sql                    # Revenue by region
-│   ├── top_10_states_by_sales.sql             # States with highest sales
-│   ├── return_rate_by_product.sql             # Product return rate analysis
-│   ├── monthly_sales_trend.sql                # Monthly sales trend (YYYY/MM)
-│   └── sales_vs_profit_margin_by_product.sql  # Identify products with low margins
-│
-├── visualizations/
-│   └── TBA                                    # Power BI / Tableau screenshots
-│
-├── key_insights/
-│   └── business insights.md                   # Summary of business insights from analysis
-│
-├── README.md                                  # Full project documentation
-├── LICENSE                                    # MIT License for open-source usage
-└── .gitignore                                 # Ignore temporary/system files (optional)
-```
-
----
-
 ## 💡 Business Questions Answered
 
 1. 📊 **Which products and categories drive the most sales?**
@@ -173,9 +141,41 @@ project-mysql-retail-inventory-sales-analysis/
 
 ---
 
+## 📂 Project Structure
+
+```text
+project-mysql-retail-inventory-sales-analysis/
+├── dataset/
+│   ├── Orders.csv                             # Raw transactional sales data
+│   ├── Returns.csv                            # Records of returned orders
+│   └── People.csv                             # Sales representative details
+│
+├── key_sql_queries/
+│   ├── date_format_conversion.sql             # Convert OrderDate and ShipDate to DATE format
+│   ├── top_10_products_by_sales.sql           # Highest-grossing products
+│   ├── top_categories_by_sales.sql            # Sales totals by product category
+│   ├── sales_by_region.sql                    # Revenue by region
+│   ├── top_10_states_by_sales.sql             # States with highest sales
+│   ├── return_rate_by_product.sql             # Product return rate analysis
+│   ├── monthly_sales_trend.sql                # Monthly sales trend (YYYY/MM)
+│   └── sales_vs_profit_margin_by_product.sql  # Identify products with low margins
+│
+├── visualizations/
+│   └── optional                               # Power BI / Tableau screenshots
+│
+├── key_insights/
+│   └── business insights.md                   # Summary of business insights from analysis
+│
+├── README.md                                  # Full project documentation
+├── LICENSE                                    # MIT License for open-source usage
+└── .gitignore                                 # Ignore temporary/system files (optional)
+```
+
+---
+
 ## 📊 Visualizations
 
-- TBA
+- Optional
 
 ---
 
@@ -190,20 +190,27 @@ project-mysql-retail-inventory-sales-analysis/
 
 ## 🚀 How to Use
 
-- Clone this repo:
-  - `git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git`
-  - cd project-mysql-retail-inventory-sales-analysis
-- Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
-- Run scripts from /key_sql_queries in MySQL Workbench, DBeaver, or command line.
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git
+   cd project-mysql-retail-inventory-sales-analysis
+   ```
+
+2. **Import CSVs** (`Orders.csv, Returns.csv, and People.csv`) into your MySQL database.
+
+3. **Run queries** using:
+   - MySQL Workbench
+   - DBeaver
+   - CLI ro any SQL-compatible IDE
 
 ---
 
 ## 📚 Tools & Technologies
 
 - **MySQL**: Data cleaning, querying, joins, aggregations
-- **Excel/Sheets**: Quick data previews and summaries
-- **GitHub**: Version control and hosting
-- **Power BI or Tableau (optional)**: Dashboards and presentation-ready visuals
+- **Excel / Google Sheets**: Data validation and pivot tables
+- **Power BI / Tableau (optional)**: Dashboard creation
+- **GitHub**: Preojct version control and hosting
 
 ---
 
