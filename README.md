@@ -40,10 +40,10 @@ project-mysql-retail-inventory-sales-analysis/
 │   ├── return_rate_by_product.sql                   # Top 10 products by return rates
 │   ├── monthly_sales_trend.sql                      # Date (yyyy/mm) by total monthly sales
 │   ├── sales_vs._profit_margin_by_product.sql       # Products by profit margin
-├── reports/
-│   └── business_insights.md                         # Summary of business insights and analysis
-├── visuals/
+├── visualizations/
 │   └── TBA                                          # Visualizations (charts, trends, dashboards)
+├── key_insights/
+│   └── business_insights.md                         # Summary of business insights and analysis
 └── README.md                                        # Project overview, instructions, and insights
 ```
 
