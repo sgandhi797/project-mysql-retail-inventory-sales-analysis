@@ -189,7 +189,7 @@ project-mysql-retail-inventory-sales-analysis/
   - `git clone https://github.com/sgandhi797/project-mysql-retail-inventory-sales-analysis.git`
   - cd project-mysql-retail-inventory-sales-analysis
 - Import Orders.csv, Returns.csv, and People.csv into your MySQL database.
-- Run scripts from /sql_queries in MySQL Workbench, DBeaver, or command line.
+- Run scripts from /key_sql_queries in MySQL Workbench, DBeaver, or command line.
 
 ---
 
