@@ -17,7 +17,8 @@
   - `orders` – transactional sales data
   - `returns` – records of returned orders
   - `people` – sales representatives
-- The dataset includes orders from 2014–2017 and contains fields such as `OrderDate`, `Sales`, `Category`, `Profit`, `Region`, and `Product`.
+> The dataset includes orders from 2014–2017 and contains fields such as `OrderDate`, `Sales`, `Category`, `Profit`, 
+  `Region`, and `Product`.
 
 ---
 
