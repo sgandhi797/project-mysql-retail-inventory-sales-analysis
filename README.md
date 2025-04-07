@@ -141,41 +141,9 @@
 
 ---
 
-## 📂 Project Structure
-
-```text
-project-mysql-retail-inventory-sales-analysis/
-├── dataset/
-│   ├── Orders.csv                             # Raw transactional sales data
-│   ├── Returns.csv                            # Records of returned orders
-│   └── People.csv                             # Sales representative details
-│
-├── key_sql_queries/
-│   ├── date_format_conversion.sql             # Convert OrderDate and ShipDate to DATE format
-│   ├── top_10_products_by_sales.sql           # Highest-grossing products
-│   ├── top_categories_by_sales.sql            # Sales totals by product category
-│   ├── sales_by_region.sql                    # Revenue by region
-│   ├── top_10_states_by_sales.sql             # States with highest sales
-│   ├── return_rate_by_product.sql             # Product return rate analysis
-│   ├── monthly_sales_trend.sql                # Monthly sales trend (YYYY/MM)
-│   └── sales_vs_profit_margin_by_product.sql  # Identify products with low margins
-│
-├── visualizations/
-│   └── optional                               # Power BI / Tableau screenshots
-│
-├── key_insights/
-│   └── business insights.md                   # Summary of business insights from analysis
-│
-├── README.md                                  # Full project documentation
-├── LICENSE                                    # MIT License for open-source usage
-└── .gitignore                                 # Ignore temporary/system files (optional)
-```
-
----
-
 ## 📊 Visualizations
 
-- Optional
+- TBA
 
 ---
 
