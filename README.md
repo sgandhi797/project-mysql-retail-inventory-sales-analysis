@@ -141,6 +141,31 @@
 
 ---
 
+## 🗂️ Project Structure
+
+```text
+project-mysql-retail-inventory-sales-analysis/
+├── Data/
+│   ├── Orders.csv
+│   ├── Returns.csv
+│   └── People.csv
+│
+├── SQL Queries/
+│   └── Project - MySQL - Retail Inventory and Sales Analysis.sql
+│
+├── Reports/
+│   └── business_insights.md
+│
+├── Visuals/
+│   └── TBA
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
 ## 📊 Visualizations
 
 - TBA
